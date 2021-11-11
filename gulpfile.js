@@ -59,18 +59,16 @@ function styles() {
 // Scripts & JS Libraries
 
 function scripts() {
-  return (
-    src([
-      "node_modules/jquery/dist/jquery.min.js",
-      "node_modules/slick-carousel/slick/slick.min.js",
-      "app/js/app.js", // app.js. Always at the end
-    ])
-      .pipe(concat("app.min.js"))
-      .pipe(babel({ presets: ["@babel/preset-env"] }))
-      // .pipe(uglify()) // Minify JS (opt.)
-      .pipe(dest("app/js"))
-      .pipe(browserSync.stream())
-  );
+  return src([
+    // "node_modules/jquery/dist/jquery.min.js",
+    // "node_modules/slick-carousel/slick/slick.min.js",
+    "app/js/app.js", // app.js. Always at the end
+  ])
+    .pipe(concat("app.min.js"))
+    .pipe(babel({ presets: ["@babel/preset-env"] }))
+    .pipe(uglify()) // Minify JS (opt.)
+    .pipe(dest("app/js"))
+    .pipe(browserSync.stream());
 }
 
 // Images

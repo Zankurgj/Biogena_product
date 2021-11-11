@@ -5,18 +5,18 @@ $base-timing: ease-in-out;
 $mobile-bp: 768px;
 
 // BASE
-body {
-  font-size: 14px;
-  font-family: $mainfamily;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.2;
-  overflow-x: hidden;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  padding: 0;
-  margin: 0;
-}
+// body {
+//   font-size: 14px;
+//   font-family: $mainfamily;
+//   min-width: 320px;
+//   position: relative;
+//   line-height: 1.2;
+//   overflow-x: hidden;
+//   background-color: #fff;
+//   -webkit-font-smoothing: antialiased;
+//   padding: 0;
+//   margin: 0;
+// }
 .visually-hidden {
   position: absolute;
   width: 1px;
