@@ -1,0 +1,21 @@
+// IMPORT SECTION
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+$mainfamily: DINPro; // Main Font Family
+// FONTS LOAD SECTION
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    font-display: swap;
+    src: url($f-url + ".woff2") format("woff2");
+    src: url($f-url + ".woff") format("woff");
+  }
+}
+
+@include font("DINPro", normal, 900, "../fonts/DINPro-Black");
+@include font("DINPro", normal, 300, "../fonts/DINPro-Light");
+@include font("DINPro", normal, 700, "../fonts/DINPro-Bold");
+@include font("DINPro", normal, 500, "../fonts/DINPro-Medium");
+@include font("DINPro", normal, 400, "../fonts/DINPro");

@@ -1,0 +1,68 @@
+{% extends "app/njk/layout/main.njk" %}
+{% block content %}
+<section class="mp-popular">
+    <div class="b-container">
+        <h1 class="mp-popular__h1">Популярные продукты</h1>
+        <div class="mp-popular__slider slider-arrow-circle js--popular-slider">
+            {% set catalogItemData = [
+            {
+            img: './images/dest/product1.png',
+            badge: false,
+            title: 'SAMe 200 (S-aденозилметионин)',
+            text: 'Монопродукт с высоким процентным содержанием, эндогенного S-аденозилметионина',
+            cost: '5 288',
+            costOld: '5 400'
+            },
+            {
+            img: './images/dest/product2.png',
+            badge: true,
+            title: 'Масло вечерней примулы 500',
+            text: 'Монопродукт ',
+            cost: '4 860',
+            costOld: ''
+            },
+            {
+            img: './images/dest/product3.png',
+            badge: false,
+            title: 'Бромезим Цинк® 10',
+            text: 'Монопродукт с высоким процентным содержанием, эндогенного S-аденозилметионина',
+            cost: '4 860',
+            costOld: ''
+            },
+            {
+            img: './images/dest/product1.png',
+            badge: false,
+            title: 'SAMe 200 (S-aденозилметионин)',
+            text: 'Монопродукт с высоким процентным содержанием, эндогенного S-аденозилметионина',
+            cost: '5 288',
+            costOld: '5 400'
+            },
+            {
+            img: './images/dest/product2.png',
+            badge: true,
+            title: 'Масло вечерней примулы 500',
+            text: 'Монопродукт с высоким процентным содержанием, эндогенного S-аденозилметионина',
+            cost: '4 860',
+            costOld: ''
+            },
+            {
+            img: './images/dest/product3.png',
+            badge: false,
+            title: 'Бромезим Цинк® 10',
+            text: 'Монопродукт с высоким процентным содержанием, эндогенного S-аденозилметионина',
+            cost: '4 860',
+            costOld: ''
+            }
+            ]
+            %}
+            {% for item in catalogItemData %}
+            <div class="mp-popular__slide-slide">
+                {% from "app/njk/components/catalog-item.njk" import catalogItem %}
+                {{ catalogItem(item) }}
+            </div>
+            {% endfor %}
+        </div>
+        <a href="#" class="b-button_action b-button__mp-popular">Каталог продуктов</a>
+    </div>
+</section>
+{% endblock %}
