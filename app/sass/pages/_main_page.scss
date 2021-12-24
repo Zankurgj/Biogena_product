@@ -85,7 +85,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg fill='none' height='17' viewBox='0 0 15 17' width='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m15 8.5-14.25 8.2272v-16.454442z' fill='%23fff'/%3E%3C/svg%3E");
   @media screen and (max-width: $mobile-bp) {
     background-position: center left 8px;
-    padding: 13px 13px 13px 20px;
+    padding: 10px 10px 10px 20px;
   }
 }
 .m-container {
@@ -257,6 +257,15 @@ body {
   max-width: 500px;
   @media screen and (max-width: $mobile-bp) {
     font-size: 12px;
+  }
+}
+.m-top-item__text_left {
+  margin-right: 70px;
+  @media screen and (max-width: $mobile-bp) {
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 400px) {
+    margin-right: 5px;
   }
 }
 .m-top-item__text_right {
