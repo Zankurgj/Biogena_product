@@ -166,6 +166,7 @@ body {
   pointer-events: none;
   @media screen and (max-width: $mobile-bp) {
     top: -138px;
+    width: 433px;
   }
 }
 .m-main-subtitle {
@@ -303,6 +304,10 @@ body {
   @media screen and (max-width: $mobile-bp) {
     width: 190px;
     bottom: -127px;
+  }
+  @media screen and (max-width: 510px) {
+    width: 140px;
+    bottom: -97px;
   }
 }
 .m-about__bg-m {
@@ -716,6 +721,7 @@ body {
 }
 .m-tech__cost_old {
   text-decoration: line-through;
+  margin-right: 10px;
 }
 // TYPE
 .m-type {
@@ -759,6 +765,9 @@ body {
 }
 .m-spoiler_m-type {
   margin-bottom: 68px;
+  @media screen and (max-width: $mobile-bp) {
+    margin-bottom: 38px;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -778,6 +787,11 @@ body {
   background-position: center right 24px;
   background-image: url("../images/dest/plus.svg");
   transition: opacity $base-duration $base-timing;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 36px 60px 36px 28px;
+    font-size: 24px;
+    background-size: 30px;
+  }
   &:hover {
     opacity: 0.6;
   }
