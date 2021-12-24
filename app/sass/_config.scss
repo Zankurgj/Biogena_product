@@ -1,7 +1,7 @@
 // IMPORT SECTION
-// @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
 // @import "node_modules/slick-carousel/slick/slick.scss";
-$mainfamily: DINPro; // Main Font Family
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 // FONTS LOAD SECTION
 // @mixin font($f-name, $f-style, $f-weight, $f-url) {
 //   @font-face {
@@ -14,8 +14,16 @@ $mainfamily: DINPro; // Main Font Family
 //   }
 // }
 
-// @include font("DINPro", normal, 900, "../fonts/DINPro-Black");
-// @include font("DINPro", normal, 300, "../fonts/DINPro-Light");
-// @include font("DINPro", normal, 700, "../fonts/DINPro-Bold");
-// @include font("DINPro", normal, 500, "../fonts/DINPro-Medium");
-// @include font("DINPro", normal, 400, "../fonts/DINPro");
+// @include font(
+//   "PT Sans Narrow",
+//   normal,
+//   700,
+//   "../fonts/ptsansnarrow-bold-webfont"
+// );
+// @include font(
+//   "PT Sans Narrow",
+//   normal,
+//   400,
+//   "../fonts/ptsansnarrow-regular-webfont"
+// );
+$mainfamily: "PT Sans Narrow", sans-serif; // Main Font Family
