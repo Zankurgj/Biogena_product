@@ -1,0 +1,30 @@
+{% macro catalogItem(data) %}
+<div class="b-catalog-item">
+    <div class="b-catalog-item__top">
+        <button type="button" class="b-catalog-item__basket-btn js--btn-basket">
+            <span class="visually-hidden">Добавить в корзину</span>
+        </button>
+        <button type="button" class="b-catalog-item__like-btn js--btn-like">
+            <span class="visually-hidden">Добавить в избранное</span>
+        </button>
+        <a href="#" class="b-catalog-item__img-inner">
+            <div class="b-catalog-item__img-wrapper">
+                {% if data.badge %}
+                <span class="b-catalog-item__badge">-5%</span>
+                {% endif %}
+                <img src="{{data.img}}" alt="{{data.title}}" class="b-catalog-item__img">
+            </div>
+        </a>
+    </div>
+    <div class="b-catalog-item__bottom">
+        <a href="#" class="b-catalog-item__title">{{data.title}}</a>
+        <a href="#" class="b-catalog-item__text">{{data.text}}</a>
+        <div class="b-catalog-item__cost-block">
+            <span class="b-catalog-item__cost">{{data.cost}} руб.</span>
+            {% if data.costOld %}
+            <span class="b-catalog-item__cost-old">{{data.costOld}} руб.</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endmacro %}
